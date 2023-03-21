@@ -1,0 +1,22 @@
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+mat-card{
+  margin: 1em;
+  padding: 0.5em;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+mat-form-field{
+  margin-top: 0.5em;
+  width: 100%;
+}
+mat-card-actions{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+

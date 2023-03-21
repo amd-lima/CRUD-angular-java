@@ -4,9 +4,9 @@
 
 $custom-app-primary: mat-palette($mat-purple,800);
 $custom-app-secondary: mat-palette($mat-purple, 100);
-$custom-app-war: mat-palette($mat-orange, 800);
+$custom-app-warn: mat-palette($mat-orange);
 
-$custom-theme: mat-light-theme($custom-app-primary,$custom-app-secondary,$custom-app-war);
+$custom-theme: mat-light-theme($custom-app-primary,$custom-app-secondary,$custom-app-warn);
 
 @include angular-material-theme($custom-theme);
 
