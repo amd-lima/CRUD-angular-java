@@ -37,9 +37,6 @@ export class CoursesComponent {
     });
   }
 
-  ngOnInit(): void{
-
-  }
 
   onAdd(){
     this.router.navigate(['new'], {relativeTo: this.route});

@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { Course } from '../model/course';
 import { CursesService } from '../services/courses.service';
 
 @Component({
@@ -22,15 +23,14 @@ export class CourseFormComponent {
     });
   }
 
-  ngOnInit(): void {}
-
   onSubmit() {
-    this.service.save(this.form.value).subscribe({
-      next: (data: any) => console.log(data),
-      error: () => {
-        this.onError();
-      },
-    });
+   this.service.save(this.form.value).subscribe({
+    next: (data) => console.log(data),
+    error: () => {
+      this.onError();
+ },
+});
+   console.log(this.form.value)
   }
 
   onCancel() {}
